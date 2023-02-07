@@ -15,6 +15,10 @@ By default, EspoCRM has some pre-defined indexes. As your database gets bigger, 
 
 See article about [how to create indexes](../development/db-indexes.md).
 
+## Database choice
+
+As of Espo v7.4, filters by teams, relations, multi-enums performs faster on MariaDB.
+
 ## MySQL params
 
 #### innodb_buffer_pool_size
@@ -37,7 +41,7 @@ We recommend to set it to `2`.
 
 ### Preloading
 
-Since EspoCRM v6.0.0 you can use a [preloading](https://www.php.net/manual/en/opcache.preloading.php). The file `preload.php` is available at the root directory.
+You can use a [preloading](https://www.php.net/manual/en/opcache.preloading.php). The file `preload.php` is available at the root directory.
 
 Important: Preloading must be disabled before upgrading and extension installation.
 
